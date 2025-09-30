@@ -27,3 +27,46 @@
 - Required Python libraries:
   ```bash
   pip install pyqt5 requests nmap python-owasp-zap-v2.4 cryptography vulners pandas python-dateutil
+
+
+**Warnings & Cautions**
+
+Authorization Required
+
+Only perform scans on targets you own or have explicit written permission to test. Unauthorized scanning is illegal and may be considered a cybercrime.
+
+Intrusive Scans
+
+Enabling Nmap scans or OWASP ZAP Active scans can generate high traffic and may disrupt services on the target. Use with caution and permission.
+
+System Resource Usage
+
+Scanning large networks or complex web applications may consume significant CPU, memory, and network bandwidth, potentially slowing down your system.
+
+Incomplete or False Results
+
+Some services may be hidden behind firewalls or security appliances, resulting in missed vulnerabilities.
+
+False positives may occur during automated scanning.
+
+SSL/TLS Warnings
+
+The tool may ignore certificate validation for HTTPS targets to perform analysis.
+
+Do not use this tool to bypass security or trust mechanisms in production systems.
+
+Heavy Traffic Warning
+
+Scanning multiple hosts, ports, or enabling active web scans can lead to network congestion, delays, or application slowdowns.
+
+External Dependencies
+
+Full functionality relies on external tools: Nmap CLI and OWASP ZAP.
+
+Missing dependencies will disable associated features.
+
+Legal and Ethical Responsibility
+
+Users are fully responsible for the results of scans.
+
+Always follow ethical guidelines and legal regulations when performing vulnerability assessments.
